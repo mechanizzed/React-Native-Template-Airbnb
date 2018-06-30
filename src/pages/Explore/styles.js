@@ -2,6 +2,9 @@ import { StyleSheet } from 'react-native';
 import { colors, metrics } from '../../styles';
 
 const styles = StyleSheet.create({
+  flex1: {
+    flex: 1,
+  },
   safeArea: {
     flex: 1,
   },
@@ -49,6 +52,21 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     borderWidth: 1,
     borderColor: colors.light,
+  },
+  containerMore: {
+    marginTop: 40,
+  },
+  titleMore: {
+    fontSize: 24,
+    fontWeight: '700',
+    paddingHorizontal: 20,
+  },
+  containerMoreInside: {
+    paddingHorizontal: 20,
+    marginTop: 20,
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
   },
 });
 

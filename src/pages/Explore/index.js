@@ -6,6 +6,7 @@ import styles from './styles';
 // Components
 import Header from '../../pages/Layout/Header/Component';
 import Category from './Component/Category';
+import Home from './Component/Home';
 
 const Explore = () => ({
   render() {
@@ -45,6 +46,26 @@ const Explore = () => ({
                     }}
                   />
                 </View>
+              </View>
+            </View>
+
+            <View style={styles.containerMore}>
+              <Text style={styles.titleMore}>Homes around the world</Text>
+              <View style={styles.containerMoreInside}>
+                <Home type="8 hóspedes 3 quartos" name="CHARMING HOUSE" price={717} rating={4} />
+                <Home
+                  type="6 hóspedes 5 quartos"
+                  name="Trullo aromatic green"
+                  price={417}
+                  rating={5}
+                />
+                <Home type="4 hóspedes 1 quartos" name="Brownstone Studio" price={277} rating={3} />
+                <Home
+                  type="3 hóspedes 1 quartos"
+                  name="Times Square Luxury Place"
+                  price={398}
+                  rating={4}
+                />
               </View>
             </View>
           </ScrollView>
