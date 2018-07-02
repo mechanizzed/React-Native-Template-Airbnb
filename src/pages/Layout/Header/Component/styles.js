@@ -4,7 +4,7 @@ import { colors, metrics } from '../../../../styles';
 
 const styles = StyleSheet.create({
   header: {
-    height: metrics.statusBarHeight,
+    height: metrics.statusBarHeight + 5,
     backgroundColor: colors.white,
     borderBottomWidth: 1,
     borderBottomColor: colors.light,
@@ -27,6 +27,12 @@ const styles = StyleSheet.create({
     flex: 1,
     fontWeight: '700',
     backgroundColor: colors.white,
+  },
+  containerTagsAnimation: {
+    flexDirection: 'row',
+    marginHorizontal: 20,
+    position: 'relative',
+    top: 10,
   },
 });
 

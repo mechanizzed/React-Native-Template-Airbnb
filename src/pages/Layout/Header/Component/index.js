@@ -5,6 +5,9 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 import styles from './styles';
 
+// Components
+import Tags from '../../Tags/Components';
+
 const Header = () => ({
   render() {
     return (
@@ -17,6 +20,11 @@ const Header = () => ({
             placeholderTextColor="grey"
             style={styles.input}
           />
+        </View>
+        <View style={styles.containerTagsAnimation}>
+          <Tags name="Tag 1" />
+          <Tags name="Tag 2" />
+          <Tags name="Tag 3" />
         </View>
       </View>
     );

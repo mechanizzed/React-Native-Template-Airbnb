@@ -1,14 +1,17 @@
 import React from 'react';
+import { Image } from 'react-native';
 import { createBottomTabNavigator } from 'react-navigation';
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
 // Pages
-import Explore from './pages/Explore';
-import Saved from './pages/Saved';
-import Trips from './pages/Trips';
-import Inbox from './pages/Inbox';
-import Profile from './pages/Profile';
+import Explore from '../pages/Explore';
+import Saved from '../pages/Saved';
+import Trips from '../pages/Trips';
+import Inbox from '../pages/Inbox';
+import Profile from '../pages/Profile';
+
+import styles from './styles';
 
 const Routes = createBottomTabNavigator(
   {
@@ -34,7 +37,9 @@ const Routes = createBottomTabNavigator(
       screen: Trips,
       navigationOptions: {
         tabBarLabel: 'TRIPS',
-        tabBarIcon: ({ tintColor }) => <Icon name="ios-heart" color={tintColor} size={24} />,
+        tabBarIcon: ({ tintColor }) => (
+          <Image style={styles.iconImage} source={require('../../assets/images/airbnb.png')} />
+        ),
       },
     },
     Inbox: {
